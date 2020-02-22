@@ -1,0 +1,360 @@
+@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400,900,700,500';
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #fff;
+}
+
+.container{
+	position:absolute;
+	width: 600px;
+	height: 500px;
+	top: calc(45% - 250px);
+	left: calc(50% - 190px);
+}
+
+form {
+	position: absolute;
+	text-align: left;
+	background: #fff;
+	width: 350px;
+	height: 570px;
+	border-radius: 15px;
+	padding: 30px 20px 15px 20px;
+	box-shadow: 5px 10px 50px 0 rgba(0, 0, 0, 0.25);
+	box-sizing: border-box;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #87613d;
+	margin-bottom: 40px;
+}
+
+p > span {
+	padding-top: 3px;
+	display: block;
+	font-weight: 400;
+	font-size: 9px;
+}
+
+h3 {
+	font-family: 'Dosis';
+	font-size: 35px;
+	text-transform: uppercase;
+	color: #87613d;
+	margin-bottom: 30px;
+}
+
+input,
+button{
+	outline: none !important; 
+}
+
+button.fb {
+    
+	border: none;
+	background: #3b5998;
+	width: 260px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+	border: 2px solid #29487d;
+	cursor: pointer;
+	margin-bottom: 25px;
+	transition:all 0.3s linear;
+}
+button.fb:hover {
+	background: #fff;
+	color: #3b5998;
+}
+
+button.google {
+    
+	border: none;
+	background: #DD4B39;
+	width: 260px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+	border: 2px solid #29487d;
+	cursor: pointer;
+	margin-bottom: 25px;
+	transition:all 0.3s linear;
+}
+button.google:hover {
+	background: #fff;
+	color: #DD4B39;
+}
+
+button.twitter {
+    
+	border: none;
+	background: #55ACEE;
+	width: 260px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+	border: 2px solid #29487d;
+	cursor: pointer;
+	margin-bottom: 25px;
+	transition:all 0.3s linear;
+}
+button.twitter:hover {
+	background: #fff;
+	color: #55ACEE;
+}
+
+button.instagram {
+    
+	border: none;
+	background: #fb3958;
+	width: 260px;
+	height: 45px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 10px;
+	border: 2px solid #29487d;
+	cursor: pointer;
+	margin-bottom: 25px;
+	transition:all 0.3s linear;
+}
+button.instagram:hover {
+	background: #fff;
+	color: #fb3958;
+}
+button.form-btn {
+	position: absolute;
+	width: 50%;
+	height: 60px;
+	bottom: 0;
+	border: 0;
+	font-family: 'Dosis';
+	font-size: 24px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+button.form-btn.sx {
+	left: 0;
+	border-radius: 0 0 0 5px;
+	background-color: rgba(255, 125, 0, 0.35);
+	color: #fff;
+	transition:all 0.3s linear;
+}
+
+button.form-btn.sx:hover {
+	background-color:rgba(255, 125, 0, 0.65);
+	color: #fff;
+}
+
+button.form-btn.sx.back {
+	background-color: rgba(0, 0, 0, 0.15);
+	transition:all 0.3s linear;
+}
+
+button.form-btn.sx.back:hover {
+	background-color: rgba(0, 0, 0, 0.35);
+}
+
+button.form-btn.dx {
+	right: 0;
+	border-radius: 0 0 5px 0;
+	background-color: #ff7d00;
+	color: #fff;
+}
+
+input {
+	border: none;
+	border-bottom: 1px solid #ffc185;
+	width: 85%;
+	font-family: 'Roboto';
+	color: #ff7d00;
+	text-align: center;
+	font-size: 21px;
+	font-weight:100;
+	margin-bottom:25px;
+}
+
+::-webkit-input-placeholder {
+   color: #ffc185;
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+:-moz-placeholder {
+   color: #ffc185;  
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+::-moz-placeholder {
+   color: #ffc185;  
+	font-family: 'Roboto';
+	font-weight:100;
+}
+
+:-ms-input-placeholder {  
+   color: #ffc185; 
+	font-family: 'Roboto';
+	font-weight:100;
+}
+.name{
+	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+	background-size: 20spx 25spx;
+	background-position: 20spx 8spx;
+	background-repeat: no-repeat;
+}
+
+
+.signIn input,
+.signUp .w100 {
+	width: 100%;
+}
+
+.signIn{
+		z-index: 1;
+		transform: perspective(100px) translate3d(100px, 0px, -30px);
+		opacity: 0.5;
+}
+
+.signUp {
+    background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+    background-size: 25px 23spx;
+    background-position: 30px 250px;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+.active-dx{
+	animation-name: foregrounding-dx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.active-sx{
+	animation-name: foregrounding-sx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.inactive-dx{
+	animation-name: overshadowing-dx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+.inactive-sx{
+	animation-name: overshadowing-sx;
+	animation-duration: 0.9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes overshadowing-dx {
+	0%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+		box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+	}
+	100%{
+		z-index: 1;
+		transform: perspective(100px) translate3d(100px, 0px, -30px);
+		opacity: 0.5;
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+	}
+}
+
+@keyframes overshadowing-sx {
+	0%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+		box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+	}
+	100%{
+		z-index: 1;
+		transform: perspective(100px) translate3d(-100px, 0px, -30px);
+		opacity: 0.5;
+		box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+	}
+}
+
+@keyframes foregrounding-dx {
+	0%{
+		z-index:1;
+		transform: perspective(100px) translate3d(100px, 0px, -30px);
+		opacity: 0.5;
+	}
+	50%{
+		z-index:2;
+		transform: perspective(100px) translate3d(400px, 0px, -30px);
+	}
+	100%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+@keyframes foregrounding-sx {
+	0%{
+		z-index:1;
+		transform: perspective(100px) translate3d(-100px, 0px, -30px);
+		opacity: 0.5;
+	}
+	50%{
+		z-index:2;
+		transform: perspective(100px) translate3d(-400px, 0px, -30px);
+	}
+	100%{
+		z-index:2;
+		transform: perspective(100px) translate3d(0px, 0px, 0px);
+		opacity: 1;
+	}
+}
+
+.or {
+  position: relative;
+  top: -15px;
+  left: 120px;
+  width: 40px;
+  height: 40px;
+  cursor:  alias;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+.or:hover {
+	background: #fff;
+	color: #55ACEE;
+}
+div.message { 
+	border: 2px solid #8D0D19;
+	color: #8D0D19; font-weight: bold;
+	margin: 1em 0 ; padding: 1em; 
+}
+
+
+
+
+

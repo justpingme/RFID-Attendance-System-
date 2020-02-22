@@ -1,0 +1,631 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
+body, html{
+    position: relative;
+    max-width: 1500px;
+  height:100%;
+  font-size:16px;
+  font-family:"Lato", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+.container {
+  background: #222;
+  height: 100%;
+  /* max-width: 800px;*/
+  margin: 0 auto;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+.container:after {
+  box-shadow: inset 5px 5px 80px rgba(0, 0, 0, 0.8);
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.wrap {
+  position: absolute;
+  top: -60%;
+  left: -10%;
+  height: 300%;
+  width: 200%;
+  transform: rotateX(20deg) rotateY(40deg) rotateZ(-20deg);
+  z-index: 5;
+}
+
+.pattern {
+  background-size: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400%;
+  animation: scroll linear 20s infinite;
+}
+
+.pattern {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/27530/r7Z09Ht.png");
+}
+
+@keyframes scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-4000px, 0, 0);
+  }
+}
+#menu-nav {
+   background-image:url("francisc.jpg") ;
+    animation: scroll linear 2s ;
+    position: fixed;
+    height: 9%;
+    left: 0;
+    top: 0;
+    width: 99%;
+    max-width: 1480px;
+    margin: 10px 5px 5px 5px;
+    border-radius: 50px;
+    line-height: 20px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    -webkit-transition: height .5s, line-height .5s; /* Safari */
+    transition: height .5s, line-height .5s;
+  animation-direction: alternate-reverse;
+    
+}
+@media screen and (max-width:767px){
+    #menu-nav{
+         background-color: #111;
+    animation: scroll linear 2s ;
+    position: fixed;
+    height: 7%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 767px;
+    margin: 3px 3px 3px 3px;
+    border-radius: 20px;
+    line-height: 10px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+    -webkit-transition: height .5s, line-height .5s; /* Safari */
+    transition: height .5s, line-height .5s;
+  animation-direction: alternate-reverse;
+    }
+}
+#navigation-bar ul {
+    list-style: none;
+  border-radius: 10px;
+  overflow: hidden;
+    
+}
+#navigation-bar li {
+  display: inline-block;
+  width: 15%;
+  -webkit-transition: all .5s;
+   transition: all .5s;
+}
+@media screen and (max-width:767px){
+    #navigation-bar li{
+        width: 40%;
+        -webkit-transition: all .5s;
+   transition: all .5s;
+    }
+}
+#navigation-bar li:hover a::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar a {
+    
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width:767px){
+    #navigation-bar a {
+        color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 10px;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+    }
+
+}
+#navigation-bar a:hover {
+  color: #e74c3c;
+    z-index: 10;
+    -webkit-transform: scale(1.09);
+            transform: scale(1.09);
+}
+#navigation-bar a::before {
+  content: "";
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  right: 50%;
+  left: 50%;
+  bottom: 0px;
+  height: 2px;
+  background-color: #e74c3c;
+}
+#navigation-bar a:hover::before {
+  right: 0;
+  left: 0;
+}
+#navigation-bar span {
+  display: block;
+}
+.hero-buttons {
+    position:absolute;
+  margin: 100px 70px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width:767px){
+    .hero-buttons{
+        position:absolute;
+  margin: 30px auto;
+  width: 20%;
+  text-align: center;
+    }
+}
+.button {
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 1.2em;
+    top: -90%;
+    opacity: 0.70;
+position: relative;
+    background: #333;
+  border: none;
+padding-right: 5px;
+  color: #fff;
+  display: inline-block;
+  width: 300px;
+  margin: 50px 10px;
+  padding: 15px 10px;
+  border-radius: 20px;
+  border: 2px #FFFFFF solid;
+  color: #FFFFFF;
+  transition: all 0.7s;
+}
+.button:hover {
+  background-color:  #e47c14 ;
+  color: #fff;
+  cursor: progress;
+    z-index: 10;
+    -webkit-transform: scale(2.05);
+            transform: scale(2.05);
+}
+@media screen and (max-width:767px){
+    .button{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 0.7em;
+    top: -50%;
+    opacity: 0.70;
+position: relative;
+    background: #333;
+  border: none;
+padding-right: 5px;
+  padding: 0px ;
+  color: #fff;
+  display: inline-block;
+  width: 200px;
+  margin: 50px 20px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  border: 2px #FFFFFF solid;
+  color: #FFFFFF;
+  transition: all 0.7s;
+    
+    }
+}
+#world-premiere{
+    background-color:  #ffa233      ;
+    animation: scroll linear 2s ;
+    position: relative;
+    cursor: pointer;
+    padding: 8px 8px;
+    font-size: 16px;
+    font-family: 'Teko', sans-serif;
+    width: 400px;
+    height: 300px;
+    margin:  0px auto;
+    border: 2px solid rgba(255,255,255,.2);
+    transition: all 0.7s;
+}
+#world-premiere:hover{
+     opacity: 100;
+  background-color: #9466da ;
+  color: #fff;
+  cursor: pointer;
+    z-index: 10;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+#world-premiere .heading{
+    background-color: rgba(0,0,0,.5);
+    padding: 5px 0px 0px 5px;
+    margin: 0px 0px 0px 0px;
+}
+#world-premiere h1{
+    font-size: 3.0em;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 70px;
+    margin: 5px 0px 0px -5px;
+    padding: 0px;
+    text-align: center;
+}
+
+#world-premiere h2{
+    font-size: 1.2em;
+    color: #6fb5f8;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 28px;
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 9px;
+    
+}
+#world-premiere .my-countdown .countdown-row { display: block;
+    text-align: center; }
+#world-premiere .my-countdown .countdown-section { display:
+    inline-block; width: 100px  }
+#world-premiere .my-countdown .countdown-amount { display: block;
+    color: #ffffff; font-size:  2.9em; line-height: 55px; }
+#world-premiere .my-countdown .countdown-period{ display: block;
+    color: #6fb5f8; font-size: 1.1em; text-transform: uppercase;
+    letter-spacing: 1px; }
+@media screen and (max-width:767px){
+    #world-premiere{
+        font-size: 10px;
+        width: 250px;
+        min-height: 200px;
+        background-size: 400px auto;
+    }
+    #world-premiere .heading {
+        padding: 12px 0px 8px 0px;
+        margin-bottom: 20px;
+        
+    }
+    #worl-premiere h1{
+        line-height: 40px;
+        font-size: 3.7em;
+    }
+    #world-premiere h2{
+        line-height: 22px;
+        letter-spacing: 5px;
+    }
+    #world-premiere .my-countdown .countdown-section {
+        width: 68px;
+    }
+}
+
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('pexels3.jpeg');
+  min-height:100%;
+}
+
+}
+@media screen and (max-width:767px){
+    .pimg1{
+  background-image:url('pexels3.jpeg');
+  min-height:50%;
+}
+}
+
+.pimg2{
+  background-image:url('pexel1.jpg');   
+  min-height:400px;
+}
+
+@media screen and (max-width:767px){
+.pimg2{
+  background-image:url('pexel1.jpg');
+  min-height:200px;
+}
+}
+
+.pimg3{
+  background-image:url('pexel5.jpg');
+  min-height:400px;
+    overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Anton', sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.events{
+  text-align:center;
+  padding:0px 0px;
+}
+.section{
+  text-align:center;
+  padding:20px 60px;
+}
+
+.events-light{
+  background: url("blur8.jpg") bottom;
+  color:#666;
+    
+}
+.events-light:hover{
+   background-image:url("078.jpg") bottom;
+}
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#666;
+  color:#111;
+}
+@media screen and (max-width:767px){
+    .section-dark{
+        max-height: 300px;
+        overflow-x: scroll;
+    }
+}
+.section-dark h2{
+    font-size: 2.0em;
+}
+.ptext{
+    font-family: "Montserrat";
+  position:relative;
+  top: -80%;
+  width:90%;
+  text-align:center;
+  color:#fff;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+@media screen and (max-width:767px){
+.ptext{
+    font-family: "Montserrat";
+  position:relative;
+  top: -80%;
+  width:100%;
+  text-align:center;
+  color:#fff;
+  font-size:27px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+    }
+}
+.ptext .border{
+    opacity: 0.70;
+    border-radius: 20px;
+  background-color:#fff;
+  color:#000;
+  padding:20px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:767px){
+  .pimg1, .pimg2, .pimg3{
+      position:relative;
+  
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+      background-attachment:fixed;
+  }
+}
+/* SUBSCRIBE POPUP
+-------------------*/
+.subscribe {
+    font-family: "Montserrat";
+    color: #fff;
+  position: fixed;
+  top: 25%;
+  left: -250px;
+  width: 250px;
+height: 250px;
+    border-radius: 20px;
+  animation: 1s 0s 1 forwards slide-in;
+ background-image:url("christian-stahl-323329.jpg") center;
+  padding: 30px;
+}
+.subscribe:hover{
+    background-color: #FFFFFF;
+  color: #2E2E2E;
+}
+@media screen and (max-width:767px){
+.subscribe {
+    font-family: "Montserrat";
+    color: #fff;
+  position: fixed;
+  top: 15%;
+  left: -370px;
+  width: 150px;
+height: 150px;
+  animation: 1s 0s 1 forwards slide-in;
+  background: url("christian-stahl-323329.jpg") center;
+  padding: 20px;
+    }
+
+}
+.subscribe button{
+    font-weight: 500px;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 1.5em;
+    top: -90%;
+position: relative;
+    background:  #fc0000 ;
+  color: #fff;
+  display: inline-block;
+  width: 200px;
+  margin: 50px 40px;
+  padding: 15px 10px;
+  border-radius: 20px;
+  border: 2px #FFFFFF solid;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.subscribe button:hover{
+    background-color:  #fc0000 ;
+  color: #fff;
+  cursor: pointer;
+    z-index: 10;
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+}
+
+
+.close{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 1.2em;
+position: relative;
+    background: #333;
+  color: #fff;
+  width: 250px;
+  margin: 0px 0px;
+  padding: 5px 5px;
+  border-radius: 20px;
+  border: 2px #FFFFFF solid;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+.close:hover{
+    background-color:   #e88095  ;
+  color: #fff;
+    z-index: 10;
+    -webkit-transform: scale(1.08);
+            transform: scale(1.08);
+}
+@media screen and (max-width:767px){
+.close{
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 0.7em;
+position: relative;
+    background: #333;
+  color: #fff;
+  width: 150px;
+  border-radius: 20px;
+  border: 2px #FFFFFF solid;
+  color: #FFFFFF;
+  transition: all 0.5s;
+
+}
+}
+@media screen and (max-width:767px){
+.subscribe button{
+    font-weight: 200px;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 0.9em;
+    top: -50%;
+position: relative;
+    background:  #fc0000 ;
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  margin: 20px 20px;
+  padding: 15px 15px;
+  border-radius: 20px;
+  border: 2px #FFFFFF solid;
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+}
+
+h2, p{
+    word-spacing: 0.2em;
+    font-weight: 2000px;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: fantasy;
+    color: black;
+}
+
+@media screen and (max-width:767px){
+h2, p{
+    word-spacing: 0.08em;
+    font-weight: 700px;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: fantasy;
+    color: black;
+}
+}
+
+.fa-times {
+    color: black;
+  position: absolute;
+    padding: 8px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.fa-times:hover {
+    background-color: aliceblue;
+    color:#000;
+    border: none;
+  border-radius: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+@keyframes slide-in {
+  100% {
+    left: 50%;
+    margin-left: -125px;
+  }
+}
+
+
+
